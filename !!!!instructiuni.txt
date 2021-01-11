@@ -1,0 +1,37 @@
+powershell as admin:
+ Set-ExecutionPolicy RemoteSigned
+ daca vrem sa revenim: Set-ExecutionPolicy Restricted
+
+Anaconda prompt -> create folder -> enter it
+conda install -c conda-forge pipenv
+pipenv install pytest
+pipenv install pytest-bdd
+pipenv install gherkin-official
+pipenv install selenium
+VSCode Pytest BDD + Python
+open folder in VSCode
+ctrl + shift + p - > python: interpreter select the one from the current folder
+
+test:
+create main.py ->
+
+print('hello')
+
+run
+
+in folderul projectului:
+anaconda prompt - > pipenv shell
+pytest-bdd generate tests/features/buscaGoogle.feature > tests/test_mySearch.py
+
+ctrl + shift + p - > Python: Configure test - > pytest -> folder with tests
+
+Download google chrome
+Place chromedriver.exe in project folder
+
+(
+pytest = "*"
+pytest-bdd = "*"
+requests = "*"
+selenium = "*"
+gherkin-official
+)
